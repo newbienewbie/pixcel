@@ -1,0 +1,17 @@
+{
+  "name": "pixcel",
+  "version": "1.0.0",
+  "description": "pixelize your image to a excel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "get-pixels": "^3.3.0",
+    "iconv-lite": "^0.4.15"
+  }
+}

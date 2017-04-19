@@ -1,0 +1,24 @@
+<!-- 
+    note : this script is not executed by nodejs but by jscript.exe instead !
+    file encoding : gbk
+-->
+<job id="pix">
+
+    <!-- poly fill -->
+    <script language="JScript" src="json.js"></script>
+
+    <script language="JScript" src="read.js"></script>
+    <script language="JScript" src="excel.js"/>
+
+    <script language="JScript">
+        WScript.Echo("[+] jscript read begins ...");    
+        var received=input.receive();
+        WScript.Echo("[+] jscript read ends .");    
+        var pixels=received.pixels;
+        var filename=received.filename;
+        WScript.Echo(filename);
+        
+        excel.draw(filename,pixels);
+        WScript.Echo('done');
+    </script>
+</job>
